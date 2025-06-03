@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #0f0f0f, #000000);
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.counter-wrapper {
+  perspective: 1000px;
+}
+
+.counter-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  border: 2px solid rgba(0, 255, 200, 0.2);
+  box-shadow: 0 0 40px rgba(0, 255, 200, 0.2),
+              0 0 60px rgba(0, 255, 200, 0.1) inset;
+  backdrop-filter: blur(10px);
+  width: 360px;
+  text-align: center;
+  animation: pulseGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.2),
+                0 0 30px rgba(0, 255, 200, 0.1) inset;
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(0, 255, 200, 0.5),
+                0 0 80px rgba(0, 255, 200, 0.2) inset;
+  }
+}
+
+.counter-title {
+  font-size: 2.2rem;
+  color: #00ffe7;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.count-display {
+  font-size: 4.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 12px #00ffe7aa;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: scale(1.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.btn-inc {
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  border-color: #00ffcc;
+}
+
+.btn-dec {
+  background: linear-gradient(135deg, #ff3d77, #ff0055);
+  border-color: #ff3d77;
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #ffa500, #ffdd00);
+  border-color: #ffc107;
+}
+
+@media (max-width: 420px) {
+  .count-display {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .counter-glass {
+    padding: 2rem 1rem;
+    width: 90vw;
+  }
+}
