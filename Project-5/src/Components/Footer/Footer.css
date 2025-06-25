@@ -1,0 +1,164 @@
+footer {
+  font-family: sans-serif;
+  margin-top: 60px;
+}
+
+
+.footer-link {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: red;
+}
+
+
+.footer-social-icons img {
+  width: 18px;
+  margin-left: 10px;
+}
+
+
+.footer-payment img {
+  max-height: 30px;
+}
+
+.f-icon{
+  height: 80px;
+  width: 100px;
+}
+
+.footer-icons{
+  text-align: end;
+}
+
+
+.footer-row {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.payment-img {
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.follow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.follow-label {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: invert(19%) sepia(94%) saturate(5633%) hue-rotate(357deg) brightness(96%) contrast(105%);
+}
+
+
+@media (max-width: 1024px) {
+  .f-icon {
+    height: 80px;
+    width:  100px !important;
+  }
+  .line {
+    height: 100px !important;
+  }
+  .f-text {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+}
+
+
+/* Small devices (≤768px) */
+@media (max-width: 768px) {
+ .f-heading{
+  margin-bottom: 25px;
+  flex-direction: column;
+ }
+
+ .f-valley{
+  text-align: center;
+  margin-bottom: 30px;
+ }
+
+}
+
+/* Extra small devices (≤576px) */
+@media (max-width: 576px) {
+  .footer-icons{
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .reserved{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .follow-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+
+

@@ -1,0 +1,55 @@
+/* Hover underline for nav links */
+.nav-link-item {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.nav-link-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.nav-link-item:hover::after {
+  width: 100%;
+}
+
+/* Optional: also make text red on hover */
+.nav-link-item:hover {
+  color: red;
+}
+
+.menu-items {
+  gap: 1.5rem;
+}
+
+/* Hover color for icons */
+.icon-style {
+  color: #000;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-style:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .menu-items {
+    gap: 0.5rem !important;
+}
+}
+
+  
