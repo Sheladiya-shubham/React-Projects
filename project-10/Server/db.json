@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "509251",
+      "title": "Padmaavat",
+      "desc": "Set in medieval India, Padmaavat tells the tale of Rani Padmavati, known for her beauty, intellect, and valor. When Alauddin Khilji hears of her, he becomes obsessed and launches a war to capture her. The story is a grand depiction of honor, sacrifice, and pride.",
+      "price": "450",
+      "image": "https://www.tallengestore.com/cdn/shop/products/Padmaavat-DeepikaPadukone-BollywoodHindiMoviePoster_grande.jpg?v=1624888686",
+      "category": "Action"
+    },
+    {
+      "id": "600465",
+      "title": "Bajirao Mastani",
+      "desc": "A sweeping historical romance based on the real-life love story of Peshwa Bajirao I and his second wife Mastani. The film showcases their passionate love, cultural conflicts, and the political turmoil that challenges their bond.",
+      "price": "999",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c0/Bajirao_Mastani_poster.jpg",
+      "category": "Romantic"
+    },
+    {
+      "id": "326618",
+      "title": "Ramleela (Goliyon Ki Raasleela Ram-Leela)",
+      "desc": "A modern-day Romeo and Juliet set in a violent, lawless land where love blooms between two young people from rival clans. Ramleela is a visually stunning saga of love, revenge, and tragedy.",
+      "price": "555",
+      "image": "https://www.tallengestore.com/cdn/shop/products/Raam_Leela_-_Deepika_Padukone_-_Bollywood_Classic_Hindi_Movie_Poster.jpg?v=1570126071",
+      "category": "Drama"
+    }
+  ]
+}
