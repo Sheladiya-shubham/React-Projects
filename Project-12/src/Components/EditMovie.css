@@ -1,0 +1,71 @@
+/* EditMovie.css */
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.form-wrapper {
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+h3.text-center {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff2e63;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ff2e63;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form-control,
+.form-select {
+  background-color: #333;
+  color: #fff !important;
+  border: 1px solid #555;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.form-control::placeholder {
+   color: #fff;            
+  opacity: 1;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff2e63;
+  box-shadow: 0 0 0 0.2rem rgba(255, 46, 99, 0.25);
+  background-color: transparent;
+  color: #ff2e63;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e91e63;
+}
